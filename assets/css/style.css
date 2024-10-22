@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Raleway;
+}
+
+header,
+main,
+footer {
+  background-color: black;
+}
+
+.banner {
+  width: 100%;
+  border-bottom: 1px solid #33a8db;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-image: url("../images/banner.png"),
+    linear-gradient(180deg, rgb(0, 0, 0), rgba(49, 168, 221, 0.3), rgb(0, 0, 0));
+}
+
+.banner-content h1 {
+  background-image: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+  color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.banner-content p {
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.banner-content button {
+  background-color: transparent;
+  font-size: 1rem;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
+  color: #31a8dd;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 2vh 5vw;
+  border: 2px solid;
+  border-image: linear-gradient(180deg, #3ba1cd 0%, #1572b7 100%);
+  border-image-slice: 10%;
+}
+
+.banner-content button:hover {
+  background-color: #31a8dd;
+  color: white;
+  cursor: pointer;
+}
+
+#course-content {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  border-bottom: 1px solid #33a8db;
+}
+
+#course-content h2 {
+  color: #33a8db;
+  padding-bottom: 4vh;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+#course-content p {
+  margin-left: 24%;
+  margin-right: 24%;
+  text-align: center;
+  padding-bottom: 2vh;
+  font-size: 1rem;
+}
+
+#course-content .modules-list .module {
+  background-color: #252525;
+  box-shadow: inset -2px 6px 4px 0px #00000066;
+  border: 1px solid #33a8db;
+  border-radius: 25px;
+  padding: 2vh 5vw;
+  font-size: 1.1rem;
+  margin: 2vh;
+  transition: 0.3s;
+}
+
+#course-content .modules-list .module:hover {
+  padding: 3vh 5vw;
+}
+
+#course-content .modules-list .module span {
+  color: #33a8db;
+}
+
+#course-content .modules-list :last-child {
+  margin-bottom: 10vh;
+}
+
+#transform-world {
+  padding-bottom: 25vh;
+  padding-top: 25vh;
+  border-bottom: 1px solid #33a8db;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../images/woman-code.png");
+  background-position: center;
+}
+
+#transform-world p {
+  padding-left: 7vw;
+  text-transform: lowercase;
+  font-size: 3rem;
+  font-weight: bold;
+  word-wrap: break-word;
+  text-shadow: 3px 2px #33a8db;
+  width: 25%;
+}
+
+#professional-challenges {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  border-bottom: 1px solid #33a8db;
+}
+
+#professional-challenges h2 {
+  color: #33a8db;
+  padding-bottom: 4vh;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+#professional-challenges p {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2vh;
+  margin-bottom: 15vh;
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer {
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 0, 0),
+    rgba(49, 168, 221, 0.3)
+  );
+}
+
+footer p {
+  padding-top: 1vh;
+  padding-bottom: 8vh;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #33a8db;
+  transition: 0.3s;
+}
+
+footer p a:hover {
+  font-size: 1.2rem;
+}
+
+@media only screen and (width <= 1200px) {
+  #transform-world p {
+    width: 50%;
+  }
+
+  .banner-content p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  #course-content p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  #transform-world p {
+    width: 60%;
+  }
+
+  #professional-challenges p {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+  }
+}
